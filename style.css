@@ -133,7 +133,7 @@ header {
 .cv__boton {
     background: var(--primary);
     padding: 1rem;
-    border-radius: 20px;
+    border-radius: 10px;
     color: var(--text-dark);
 }
 
@@ -394,3 +394,4 @@ input::placeholder, textarea::placeholder {
     padding: 1.5rem 0;
     gap: 5px;
 }
+

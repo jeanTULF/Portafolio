@@ -1,0 +1,40 @@
+@media screen and (min-width:768px) {
+    .inicio {
+        flex-direction: row-reverse;
+    }
+
+    .profile__img {
+        align-self: start;
+    }
+
+    .header__parrafo span {
+        text-align: start;
+    }
+
+    .redes__header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header__cv {
+        padding-right: 2.5rem;
+    }
+
+    .sobre-mi__titulo {
+        text-align: start;
+    }
+
+    .skills__item, .hobbies__item {
+        margin: 5px;
+        width: 30%;
+        max-width: 380px;
+    }
+
+    .formacion__list {
+        display: flex;
+    }
+
+    .contacto__encabezado {
+        padding-right: 75px;
+    }
+}
