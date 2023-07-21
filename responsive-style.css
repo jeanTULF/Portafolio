@@ -38,3 +38,14 @@
         padding-right: 75px;
     }
 }
+
+@media screen and (min-width: 1023px) {
+
+    .navbar a {
+        justify-self: right;
+    }
+
+    .navbar ul {
+        display: flex;
+    }
+}
