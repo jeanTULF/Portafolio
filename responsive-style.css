@@ -3,6 +3,14 @@
         flex-direction: row-reverse;
     }
 
+    .inicio img {
+        max-width: 200px;
+    }
+
+    .navbar {
+        font-size: inherit;
+    }
+
     .profile__img {
         align-self: start;
     }
@@ -41,11 +49,25 @@
 
 @media screen and (min-width: 1023px) {
 
-    .navbar a {
-        justify-self: right;
+    body {
+        font-size: inherit;
     }
 
     .navbar ul {
         display: flex;
+    }
+
+    .navbar li {
+        padding: 0 10px;
+        transition: 0.4s;
+    }
+
+    .navbar li:hover {
+        transform: scale(1.1);
+        color: #2ac032;
+    }
+
+    .inicio img {
+        max-width: 300px;
     }
 }

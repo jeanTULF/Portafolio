@@ -27,7 +27,7 @@ header {
 .navbar {
     display: flex;
     justify-content: space-between;
-    font-size: 14px;
+    font-size: 0.875rem;
     padding: 1.5rem 1rem;
     font-family: 'Libre Franklin', sans-serif;
     position: sticky;
@@ -57,7 +57,7 @@ header {
 }
 
 .inicio img {
-    width: 150px;
+    width: 40%;
     border-radius: 50%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
