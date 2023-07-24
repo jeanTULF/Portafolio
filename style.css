@@ -339,6 +339,10 @@ header {
     margin-bottom: 5px;
 }
 
+.contacto__imagen {
+    display: none;
+}
+
 form {
     display: flex;
     flex-direction: column;
