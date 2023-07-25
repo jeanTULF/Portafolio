@@ -290,7 +290,8 @@ header {
 .proyectos__boton {
     padding: 12px 16px;
     margin-right: .5rem;
-    border: 1px solid var(--secondary);
+    border: none;
+    outline: 1px solid var(--secondary);
 }
 
 .active {
@@ -364,7 +365,7 @@ input::placeholder, textarea::placeholder {
 }
 
 .form input:focus, .form textarea:focus {
-    border-bottom: 2px solid #146C94;
+    border-bottom: 2px solid var(--accent);
 }
 
 .form textarea {

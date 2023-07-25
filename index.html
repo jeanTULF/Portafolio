@@ -27,7 +27,8 @@
                     <li><a href="#formacion" class="navbar__list-item">Formación</a></li>
                     <li><a href="#proyectos" class="navbar__list-item">Proyectos</a></li>
                     <li><a href="#contacto" class="navbar__list-item">Contacto</a></li>
-                    <li><a href="#contacto" class="navbar__list-item correo">jeanpolo15@gmail.com</a></li>
+                    <li><i class="fa-solid fa-bars"></i><a href="#" class="navbar__list-item">menu</a></li>
+                    <li><a href="#" class="navbar__list-item correo">jeanpolo15@gmail.com</a></li>
                 </ul>
             </nav>
             <div class="inicio">
@@ -42,8 +43,8 @@
             </p>
             <div class="redes__header">
             <ul class="redes__list">
-                <li><a href="#" class="header__redes"><i class="fa-brands fa-github" style="color: #000000;"></i></a></li>
-                <li><a href="#" class="header__redes"><i class="fa-brands fa-linkedin" style="color: #0274b3;"></i></a></li>
+                <li><a href="https://github.com/jeanTULF" class="header__redes"><i class="fa-brands fa-github" style="color: #000000;"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/jean-marcos-polo-parker-087951271/" class="header__redes"><i class="fa-brands fa-linkedin" style="color: #0274b3;"></i></a></li>
             </ul>
             <div class="header__cv">
                 <a href="#" class="cv__boton">Currículum Vitae</a>
@@ -139,7 +140,7 @@
                 
                 <form class="form">
                     <label for="nombre"></label>
-                    <input type="text" id="nombre" placeholder="Nombre" required>
+                    <input type="text" id="nombre" placeholder="Nombre" required maxlength="50" data-tipo="nombre">
                     <label for="email"></label>
                     <input type="email" id="email" placeholder="Correo Electronico" required>
                     <label for="asunto"></label>
@@ -160,5 +161,6 @@
             <p>2023</p>
         </div>
         </footer>
+        <script src="script.js"></script>
     </body>
 </html>

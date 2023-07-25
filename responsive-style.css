@@ -72,6 +72,10 @@
         color: #2ac032;
     }
 
+    .navbar li:nth-child(7) {
+        display: none;
+    }
+
     .correo {
         font-weight: 700;
         color: #041104;
@@ -83,6 +87,14 @@
         color: #fafafa;
         border-radius: 5px;
         padding: 10px;
+    }
+
+    .cv__boton {
+        transition: 0.25s;
+    }
+
+    .cv__boton:hover {
+        background-color: #2ac032;
     }
 
     .inicio {
@@ -115,7 +127,7 @@
 
     .proyectos {
         flex-direction: row;
-        gap: 50px 150px;
+        gap: 0 150px;
     }
 
     .proyectos:nth-child(3) {
@@ -126,8 +138,17 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 2rem;
+        gap: 1rem 2rem;
         padding-top: 50px;
+    }
+
+    .proyectos__boton {
+        transition: 0.5s;
+    }
+
+    .proyectos__boton:hover {
+        background: #81e486;
+        border: none;
     }
 
     .contacto {
