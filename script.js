@@ -2,7 +2,10 @@ const formulario = document.getElementById('formulario');
 const inputs = document.querySelectorAll('#formulario input, textarea');
 
 const expresiones = {
-    nombre: /^[a-zA-Z0-9,.!?() ]{1,50}$/
+    nombre: /^[a-zA-Z0-9,.!?() ]{1,50}$/,
+    email: /^\S+@\S+\.\S+$/,
+    asunto: /^\S.{1,50}\S$/,
+    mensaje: /^\S.{1,300}\S?$/
 }
 
 const tipoDeErrores = [
@@ -21,24 +24,30 @@ const mensajesDeError = {
 const validaFormulario = (e) => {
     switch (e.target.name) {
     case "nombre":
-        if (expresiones.nombre.test(e.target.value)) {
-            document.getElementById('grupo__nombre').classList.remove('form__grupo-incorrecto');
-        } else {
-            document.getElementById('grupo__nombre').classList.add('form__grupo-incorrecto');
-        }
+        validarCampo(expresiones.nombre, e.target, 'nombre');
     break;
 
     case "email":
-
+        validarCampo(expresiones.email, e.target, 'email');
     break;
 
     case "asunto":
-
+        validarCampo(expresiones.asunto, e.target, 'asunto');
     break;
 
     case "mensaje":
-
+        validarCampo(expresiones.mensaje, e.target, 'mensaje');
     break;
+    }
+}
+
+const validarCampo = (expresion, input, campo) => {
+    if (expresion.test(input.value)) {
+        document.getElementById(`grupo__${campo}`).classList.remove('form__grupo-incorrecto');
+        document.querySelector(`#grupo__${campo} .form__input-error`).classList.remove('form__input-error-activo');
+    } else {
+        document.getElementById(`grupo__${campo}`).classList.add('form__grupo-incorrecto');
+        document.querySelector(`#grupo__${campo} .form__input-error`).classList.add('form__input-error-activo');
     }
 }
 
@@ -49,4 +58,4 @@ inputs.forEach((input) => {
 
 formulario.addEventListener('submit', (e) => {
     e.preventDefault();
-})
+});

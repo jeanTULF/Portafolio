@@ -352,6 +352,8 @@ header {
     display: none;
     font-size: 13px;
     margin-bottom: 0;
+    padding: 5px 0 0 0;
+    color: #bb2929;
 }
 
 .form__input-error-activo {
@@ -379,7 +381,7 @@ form {
     border: 3px solid #bb2929;
 }
 
-input {
+input, textarea {
     width: 100%;
     padding: 1rem 0;
     border-radius: 4px;
