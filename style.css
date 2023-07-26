@@ -344,6 +344,20 @@ header {
     display: none;
 }
 
+.contacto__texto {
+    margin-bottom: 20px;
+}
+
+.form__input-error {
+    display: none;
+    font-size: 13px;
+    margin-bottom: 0;
+}
+
+.form__input-error-activo {
+    display: block;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -352,11 +366,26 @@ form {
     max-width: 700px;
 }
 
+.form__grupo {
+    padding: 5px 0;
+}
+
+.form__grupo-incorrecto .form__label{
+    color: #bb2929;
+    opacity: 1;
+}
+
+.form__grupo-incorrecto .form__input {
+    border: 3px solid #bb2929;
+}
+
 input {
+    width: 100%;
     padding: 1rem 0;
     border-radius: 4px;
-    border: none;
     outline: none;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 16px;
 }
 
 input::placeholder, textarea::placeholder {
@@ -364,11 +393,31 @@ input::placeholder, textarea::placeholder {
     font-size: 16px;
 }
 
-.form input:focus, .form textarea:focus {
-    border-bottom: 2px solid var(--accent);
+.form input {
+    border: 3px solid transparent;
+    transition: .3s;
 }
 
 .form textarea {
+    outline: 3px solid transparent;
+    transition: .1s;
+}
+
+.form textarea:focus {
+    outline: 3px solid var(--accent);
+}
+
+.form input:focus {
+    border: 3px solid var(--accent);
+}
+
+.form > label {
+    cursor: pointer;
+    padding: 20px 0 0 0;
+}
+
+.form textarea {
+    width: 100%;
     border: none;
     border-radius: 5px;
     resize: none;
@@ -386,7 +435,7 @@ input::placeholder, textarea::placeholder {
     border: none;
 }
 
-.form button:hover {
+#enviar:hover {
     background: var(--primary);
     cursor: pointer;
 }

@@ -138,20 +138,44 @@
                 <p class="contacto__texto">Complete el siguiente formulario y 
                     me pondré en contacto con usted lo antes posible</p>
                 
-                <form class="form">
-                    <label for="nombre"></label>
-                    <input type="text" id="nombre" placeholder="Nombre" pattern="^[a-zA-Z0-9,.!?() ]{1,50}$" data-tipo="nombre" required>
-                    <label for="email"></label>
-                    <input type="email" id="email" placeholder="Correo Electronico" required>
-                    <label for="asunto"></label>
-                    <input type="text" id="asunto" placeholder="Asunto">
-                    <label for="mensaje"></label>
-                    <textarea id="mensaje" name="mensaje" cols="20" rows="10" placeholder="Mensaje"></textarea>
-                    <button type="submit">Enviar Mensaje</button>
+                <form class="form" id="formulario">
+                    <div class="form__grupo" id="grupo__nombre">
+                    <label for="nombre" class="form__label">Nombre</label>
+                    <div class="form__nombre">
+                    <input type="text" class="form__input" id="nombre" name="nombre" placeholder="Ej: John Doe" required>
+                    <span class="form__input-error">Este campo no es valido</span>
+                    </div>
+                </div>
+
+                    <div class="form__grupo">
+                    <label for="email" class="form__label" >Correo Electronico</label>
+                    <div class="form__email" id="grupo__email">
+                    <input type="email" class="form__input" id="email" name="email" placeholder="Ej: John@example.com" required>
+                    <span class="form__input-error">Este campo no es valido</span>
+                    </div>
+                </div>
+
+                    <div class="form__grupo">
+                    <label for="asunto" class="form__label" >Asunto</label>
+                    <div class="form__asunto" id="grupo__asunto">
+                    <input type="text" class="form__input" id="asunto" name="asunto" placeholder="Ej: Consulta">
+                    <span class="form__input-error">Este campo no es valido</span>
+                    </div>
+                </div>
+
+                    <div class="form__grupo">
+                    <label for="mensaje" class="form__label">Mensaje</label>
+                    <div class="form__mensaje" id="grupo__mensaje">
+                    <textarea class="form__input" id="mensaje" name="mensaje" cols="20" rows="10" placeholder="Ej: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hac habitasse platea dictumst. Sed id nunc non purus tincidunt iaculis ac vel elit."></textarea>
+                    <span class="form__input-error">Este campo no es valido</span>
+                    </div>
+                </div>
+
+                    <button type="submit" id="enviar">Enviar Mensaje</button>
                 </form>
             </div>
                 <div class="contacto__imagen">
-                    <img src="contacto.jpg" alt="datos personales">
+                    <img src="hombre-de-negocios.png" alt="datos personales">
                 </div>
             </section>
         </main>
