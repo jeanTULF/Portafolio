@@ -442,6 +442,17 @@ input::placeholder, textarea::placeholder {
     cursor: pointer;
 }
 
+.form__mensaje-exito {
+    display: none;
+}
+
+.form__mensaje-exito-activo {
+    display: block;
+    color: #1a751e;
+    font-size: 18px;
+    font-weight: 500;
+}
+
 .footer {
     display: flex;
     flex-direction: column;
