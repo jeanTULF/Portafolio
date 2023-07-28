@@ -8,19 +8,6 @@ const expresiones = {
     mensaje: /^\S.{1,300}\S?$/
 }
 
-const tipoDeErrores = [
-    "valueMissing",
-    "typeMismatch",
-    "patternMismatch",
-];
-
-const mensajesDeError = {
-    nombre: {
-        valueMissing: "El campo nombre no puede estar vacio",
-        patternMismatch: "El campo nombre no puede tener mas de 50 caractéres"
-    }
-}
-
 const campos = {
     nombre: false,
     email: false,
