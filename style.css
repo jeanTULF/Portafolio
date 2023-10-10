@@ -323,8 +323,10 @@ header {
     font-weight: 500;
 }
 
-.proyectos:nth-child(5) {
-    flex-direction: row-reverse;
+.proyectos__descripcion {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 #alurageek {

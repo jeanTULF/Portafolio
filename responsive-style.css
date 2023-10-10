@@ -45,6 +45,12 @@
     .contacto__encabezado {
         padding-right: 75px;
     }
+
+    .proyectos__descripcion {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
 }
 
 @media screen and (min-width: 1023px) {
@@ -115,6 +121,10 @@
     }
 
     .proyectos:nth-child(3) {
+        flex-direction: row-reverse;
+    }
+
+    .proyectos:nth-child(5) {
         flex-direction: row-reverse;
     }
 
