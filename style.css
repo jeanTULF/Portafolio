@@ -299,6 +299,10 @@ header {
     max-width: 750px;
 }
 
+#hiupy {
+    filter: blur(3px);
+}
+
 .boton {
     margin-top: 1rem;
 }
@@ -327,10 +331,6 @@ header {
     display: flex;
     flex-direction: column;
     gap: 10px;
-}
-
-#alurageek {
-    filter: blur(3px);
 }
 
 #texto-preview {
