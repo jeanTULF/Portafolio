@@ -299,10 +299,6 @@ header {
     max-width: 750px;
 }
 
-#hiupy {
-    filter: blur(3px);
-}
-
 .boton {
     margin-top: 1rem;
 }
